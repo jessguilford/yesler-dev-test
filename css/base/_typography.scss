@@ -1,0 +1,35 @@
+body {
+  font-size: 16px;
+}
+
+h1 {
+  color: $white;
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: rem-calc(52);
+  line-height: em-calc(64,52);
+}
+
+h2 {
+  color: $navy;
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: rem-calc(52);
+  line-height: em-calc(64,52);
+}
+
+h3 {
+  color: $navy;
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: rem-calc(24);
+  line-height: em-calc(34,24);
+}
+
+p {
+  color: $navy;
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: rem-calc(16);
+  line-height: em-calc(30,16);
+}
