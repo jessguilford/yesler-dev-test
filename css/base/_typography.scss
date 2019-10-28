@@ -6,8 +6,8 @@ h1 {
   color: $white;
   font-family: $open-sans;
   font-weight: 400;
-  font-size: rem-calc(52);
-  line-height: em-calc(64,52);
+  font-size: rem-calc(72);
+  line-height: em-calc(78,72);
 }
 
 h2 {
@@ -22,8 +22,32 @@ h3 {
   color: $navy;
   font-family: $open-sans;
   font-weight: 400;
+  font-size: rem-calc(32);
+  line-height: em-calc(44,32);
+}
+
+h4 {
+  color: $navy;
+  font-family: $open-sans;
+  font-weight: 400;
   font-size: rem-calc(24);
   line-height: em-calc(34,24);
+}
+
+h5 {
+  color: $navy;
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: rem-calc(20);
+  line-height: em-calc(30,20);
+}
+
+h6 {
+  color: $navy;
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: rem-calc(18);
+  line-height: em-calc(24,18);
 }
 
 p {
@@ -31,5 +55,16 @@ p {
   font-family: $open-sans;
   font-weight: 400;
   font-size: rem-calc(16);
-  line-height: em-calc(30,16);
+  line-height: em-calc(24,16);
+
+  &.sm {
+    font-size: rem-calc(14);
+    line-height: em-calc(22,14);
+  }
+
+  &.xs {
+    font-size: rem-calc(12);
+    line-height: em-calc(18,12);
+  }
+
 }

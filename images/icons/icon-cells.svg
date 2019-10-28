@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="81px" viewBox="0 0 124 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+    <title>3D99FCE8-2C6F-44CE-8AD0-A308F238B0A3</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(-125.000000, -1624.000000)" id="features" stroke-width="3.84341637">
+            <g transform="translate(0.000000, 715.000000)">
+                <g id="content" transform="translate(2.000000, 76.000000)">
+                    <g id="icon-cells" transform="translate(125.000000, 835.000000)">
+                        <rect id="Rectangle-path" stroke="#2AB7CA" x="0.213523132" y="0.212707182" width="56.4768683" height="20.9218785"></rect>
+                        <polygon id="Rectangle-path" stroke="#2AB7CA" points="0.213523132 27.9709945 56.6903915 27.9709945 56.6903915 48.8928729 0.213523132 48.8928729"></polygon>
+                        <polygon id="Rectangle-path" stroke="#FF6542" fill="#FF6542" fill-rule="nonzero" points="0.213523132 55.7292818 56.6903915 55.7292818 56.6903915 76.6511602 0.213523132 76.6511602"></polygon>
+                        <polygon id="Rectangle-path" stroke="#2AB7CA" points="63.4291815 0.212707182 119.90605 0.212707182 119.90605 21.1345856 63.4291815 21.1345856"></polygon>
+                        <polygon id="Rectangle-path" stroke="#FF6542" fill="#FF6542" fill-rule="nonzero" points="63.4291815 27.9709945 119.90605 27.9709945 119.90605 48.8928729 63.4291815 48.8928729"></polygon>
+                        <polygon id="Rectangle-path" stroke="#FF6542" fill="#FF6542" fill-rule="nonzero" points="63.4291815 55.7292818 119.90605 55.7292818 119.90605 76.6511602 63.4291815 76.6511602"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
