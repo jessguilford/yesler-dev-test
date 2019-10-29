@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 // Colors
 $white: #FFFFFF;
@@ -10,3 +10,11 @@ $aqua: #2AB7CA;
 
 // Typography
 $open-sans: 'Open Sans', Arial, sans-serif;
+
+// Breakpoints (minimum)
+$xss-width: 320px; // MAX iPhone 5 and lower workaround
+//$xs-width: 375px; // MAX omitted; iPhone 7, nominal mobile width
+$sm-width: 768px; // MIN
+$md-width: 992px;
+$lg-width: 1200px;
+$xl-width: 1600px;

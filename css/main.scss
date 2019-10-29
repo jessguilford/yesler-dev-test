@@ -1,8 +1,10 @@
 // Import Sass partials
+@import 'vendor/bootstrap.min.css';
 @import 'utils/functions';
 @import 'utils/variables';
-@import 'vendor/bootstrap.min.css';
+@import 'utils/mixins';
 @import 'base/typography';
 @import 'components/buttons';
 @import 'components/navigation';
 @import 'components/navigation';
+@import 'global/global'
