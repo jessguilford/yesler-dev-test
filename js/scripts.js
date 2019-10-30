@@ -28,21 +28,12 @@ $(document).ready(function() {
   });
 });
 
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-}
-
 // Add smooth scroll to any href that links to another section on the page
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+    }, 600, 'easeOutSine');
 });
 
 // Get position of the bottom of the hero

@@ -304,6 +304,14 @@ form {
   background-size: cover;
   color: #FFFFFF;
   padding: 50px 0; }
+  .signup .jump {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0; }
+    @media (min-width: 768px) {
+      .signup .jump {
+        top: -96px; } }
   @media (min-width: 768px) {
     .signup {
       min-height: 755px;
