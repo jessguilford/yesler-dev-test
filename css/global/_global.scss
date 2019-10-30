@@ -9,6 +9,11 @@
   z-index: 1;
 }
 
+.no-padding-mobile {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 // Navigation
 
 .nav {
@@ -21,6 +26,8 @@
 
   .brand-logo {
     width: 123px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -34,25 +41,25 @@
   background-size: cover;
   color: $white;
 
-  .banner {
-    position: absolute;
-    // top: 50%;
-    // transform: translateY(-50%);
-    z-index: 1;
-  }
-
   @include sm {
     min-height: 755px;
     background: $navy url('../images/backgrounds/hero-bg.jpg');
     background-position: center;
     background-size: cover;
+  }
+}
 
-    .banner {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-    }
+.vert-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  @include sm {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
   }
 }
 
@@ -69,28 +76,74 @@
 
 // Logos
 .logos {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   img {
-    width: 106px;
-    margin: 42px auto 52px;
+    width: 80px;
+    margin: 8px auto;
     display: block;
+
+    @include sm {
+      width: 106px;
+      margin: 42px auto 52px;
+      display: block;
+    }
+  }
+}
+
+// About
+.about {
+  padding-top: 113px;
+  padding-bottom: 50px;
+
+  .item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @include sm {
+      padding: 90px 40px 43px;
+    }
+  }
+
+  .cloud img {
+    margin-top: 13px;
+    margin-bottom: 28px;
+  }
+
+  .cells img {
+    margin-top: 13px;
+    margin-bottom: 25px;
+  }
+
+  .tv img {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
 // Signup
 .signup {
-  min-height: 537px;
+  // min-height: 537px;
   position: relative;
   text-align: center;
   background: $navy url('../images/backgrounds/m/signup-bg-2x.jpg');
   background-position: center;
   background-size: cover;
   color: $white;
+  padding: 50px 0;
 
   @include sm {
     min-height: 755px;
     background: $navy url('../images/backgrounds/signup-bg.jpg');
     background-position: center;
     background-size: cover;
+    padding: 96px 0 129px;
 
     .banner {
       position: absolute;
@@ -98,5 +151,13 @@
       transform: translateY(-50%);
       z-index: 1;
     }
+
+    h2 {
+      margin-bottom: 60px;
+    }
+  }
+
+  .bg-overlay {
+    background-color: rgba(0,0,0,0.2);
   }
 }

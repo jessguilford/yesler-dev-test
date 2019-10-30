@@ -1,0 +1,26 @@
+form {
+  padding: 48px 0;
+
+  .form-group {
+    text-align: left;
+  }
+
+  label {
+    font-size: rem-calc(15);
+    line-height: em-calc(24,15);
+  }
+
+  input[type="text"] {
+    border-radius: 2px;
+    padding: 10px 16px;
+  }
+
+  button[type="submit"] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  @include sm {
+    padding: 48px 40px;
+  }
+}

@@ -1,4 +1,5 @@
 @import url(vendor/bootstrap.min.css);
+@import url(vendor/normalize.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 body {
   font-size: 16px; }
@@ -18,8 +19,12 @@ h2, .h2 {
   color: #022F40;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
-  font-size: 3.25rem;
-  line-height: 1.2307692308em; }
+  font-size: 1.75rem;
+  line-height: 1.1428571429em; }
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 3.25rem;
+      line-height: 1.2307692308em; } }
 
 h3, .h3 {
   color: #022F40;
@@ -131,11 +136,33 @@ p {
     background-color: #FFFFFF;
     color: #2AB7CA; }
 
+form {
+  padding: 48px 0; }
+  form .form-group {
+    text-align: left; }
+  form label {
+    font-size: 0.9375rem;
+    line-height: 1.6em; }
+  form input[type="text"] {
+    border-radius: 2px;
+    padding: 10px 16px; }
+  form button[type="submit"] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  @media (min-width: 768px) {
+    form {
+      padding: 48px 40px; } }
+
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p {
   color: #FFFFFF; }
 
 .content {
   z-index: 1; }
+
+.no-padding-mobile {
+  padding-left: 0;
+  padding-right: 0; }
 
 .nav {
   background-color: rgba(0, 0, 0, 0.4);
@@ -145,7 +172,9 @@ p {
   top: 0;
   z-index: 2; }
   .nav .brand-logo {
-    width: 123px; }
+    width: 123px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
 
 .hero {
   min-height: 537px;
@@ -155,20 +184,24 @@ p {
   background-position: center;
   background-size: cover;
   color: #FFFFFF; }
-  .hero .banner {
-    position: absolute;
-    z-index: 1; }
   @media (min-width: 768px) {
     .hero {
       min-height: 755px;
       background: #022F40 url("../images/backgrounds/hero-bg.jpg");
       background-position: center;
-      background-size: cover; }
-      .hero .banner {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1; } }
+      background-size: cover; } }
+
+.vert-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; }
+  @media (min-width: 768px) {
+    .vert-center {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1; } }
 
 .gradient-overlay::after {
   content: "";
@@ -180,29 +213,65 @@ p {
   left: 0;
   right: 0; }
 
-.logos img {
-  width: 106px;
-  margin: 42px auto 52px;
-  display: block; }
+.logos {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  .logos img {
+    width: 80px;
+    margin: 8px auto;
+    display: block; }
+    @media (min-width: 768px) {
+      .logos img {
+        width: 106px;
+        margin: 42px auto 52px;
+        display: block; } }
+
+.about {
+  padding-top: 113px;
+  padding-bottom: 50px; }
+  .about .item {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    @media (min-width: 768px) {
+      .about .item {
+        padding: 90px 40px 43px; } }
+  .about .cloud img {
+    margin-top: 13px;
+    margin-bottom: 28px; }
+  .about .cells img {
+    margin-top: 13px;
+    margin-bottom: 25px; }
+  .about .tv img {
+    margin-top: 0px;
+    margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .about {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
 
 .signup {
-  min-height: 537px;
   position: relative;
   text-align: center;
   background: #022F40 url("../images/backgrounds/m/signup-bg-2x.jpg");
   background-position: center;
   background-size: cover;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding: 50px 0; }
   @media (min-width: 768px) {
     .signup {
       min-height: 755px;
       background: #022F40 url("../images/backgrounds/signup-bg.jpg");
       background-position: center;
-      background-size: cover; }
+      background-size: cover;
+      padding: 96px 0 129px; }
       .signup .banner {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 1; } }
+        z-index: 1; }
+      .signup h2 {
+        margin-bottom: 60px; } }
+  .signup .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=main.css.map */

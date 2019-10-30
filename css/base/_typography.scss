@@ -19,8 +19,13 @@ h2, .h2 {
   color: $navy;
   font-family: $open-sans;
   font-weight: 400;
-  font-size: rem-calc(52);
-  line-height: em-calc(64,52);
+  font-size: rem-calc(28);
+  line-height: em-calc(32,28);
+
+  @include sm {
+    font-size: rem-calc(52);
+    line-height: em-calc(64,52);
+  }
 }
 
 h3, .h3 {
