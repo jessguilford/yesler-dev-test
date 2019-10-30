@@ -92,6 +92,20 @@
   background-size: cover;
   color: $white;
 
+  &.gradient-overlay::after {
+    content: "";
+    display: table-cell;
+    background-image: linear-gradient(236.64538053694753deg,rgba(5,92,116,0.65), $navy);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include sm {
+      background-image: linear-gradient(236.64538053694753deg,rgba(5,92,116,0.31), $navy);
+    }
+  }
+
   @include sm {
     min-height: 755px;
     background: $navy url('../images/backgrounds/hero-bg.jpg');
@@ -117,7 +131,7 @@
 .gradient-overlay::after {
   content: "";
   display: table-cell;
-  background-image: linear-gradient(236.64538053694753deg,rgba(5,92,116,0.31), $navy);
+  background-image: linear-gradient(236.64538053694753deg,rgba(5,92,116,0.65), $navy);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -141,11 +155,16 @@
       display: block;
     }
   }
+
+  @include sm {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
 }
 
 // features
 .features {
-  padding-top: 113px;
+  padding-top: 76px;
   padding-bottom: 50px;
   background-color: $ivory;
 
@@ -174,7 +193,7 @@
   }
 
   @include sm {
-    padding-top: 50px;
+    padding-top: 113px;
     padding-bottom: 50px;
   }
 }

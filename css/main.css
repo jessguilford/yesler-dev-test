@@ -229,6 +229,18 @@ form {
   background-position: center;
   background-size: cover;
   color: #FFFFFF; }
+  .hero.gradient-overlay::after {
+    content: "";
+    display: table-cell;
+    background-image: linear-gradient(236.6453805369deg, rgba(5, 92, 116, 0.65), #022F40);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    @media (min-width: 768px) {
+      .hero.gradient-overlay::after {
+        background-image: linear-gradient(236.6453805369deg, rgba(5, 92, 116, 0.31), #022F40); } }
   @media (min-width: 768px) {
     .hero {
       min-height: 755px;
@@ -251,7 +263,7 @@ form {
 .gradient-overlay::after {
   content: "";
   display: table-cell;
-  background-image: linear-gradient(236.6453805369deg, rgba(5, 92, 116, 0.31), #022F40);
+  background-image: linear-gradient(236.6453805369deg, rgba(5, 92, 116, 0.65), #022F40);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -270,9 +282,13 @@ form {
         width: 106px;
         margin: 42px auto 52px;
         display: block; } }
+  @media (min-width: 768px) {
+    .logos {
+      padding-top: 24px;
+      padding-bottom: 0; } }
 
 .features {
-  padding-top: 113px;
+  padding-top: 76px;
   padding-bottom: 50px;
   background-color: #FAFAFA; }
   .features .item {
@@ -292,7 +308,7 @@ form {
     margin-bottom: 20px; }
   @media (min-width: 768px) {
     .features {
-      padding-top: 50px;
+      padding-top: 113px;
       padding-bottom: 50px; } }
 
 .signup {
