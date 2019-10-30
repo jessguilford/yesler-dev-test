@@ -1,3 +1,42 @@
+$(document).ready(function() {
+  var html = '';
+
+  // Get logos
+  $.getJSON("https://s3-us-west-2.amazonaws.com/jessguilford.com/yesler/logos.json", function(data) {
+
+    // Shuffle the array of logos
+    for (var i=data.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      // Swap data at the current index with data at a random index
+      var temp = data[i];
+      data[i] = data[j];
+      data[j] = temp;
+    }
+    // Select 6 logos
+    var logos = data.slice(0,6);
+
+    // for each logo, format the image
+    logos.forEach(function(logo) {
+      html +=
+        '<div class="col-4 col-md-2 no-padding-mobile">' +
+        '<img src="images/logos/'+logo.file+'" class="img-responsive" alt="'+logo.alt+'">' +
+        '</div>';
+    });
+
+    // render the logo html
+    $('#logos').append(html);
+  });
+});
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
 // Add smooth scroll to any href that links to another section on the page
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();

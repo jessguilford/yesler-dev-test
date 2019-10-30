@@ -12,8 +12,8 @@ h1, .h1 {
   line-height: 1.2222222222em; }
   @media (min-width: 768px) {
     h1, .h1 {
-      font-size: 4.5rem;
-      line-height: 1.0833333333em; } }
+      font-size: 3.25rem;
+      line-height: 1.2307692308em; } }
 
 h2, .h2 {
   color: #022F40;
@@ -141,15 +141,20 @@ p {
     color: #2AB7CA; }
 
 form {
-  padding: 48px 0; }
+  padding: 48px 0;
+  font-family: "Open Sans", Arial, sans-serif; }
   form .form-group {
     text-align: left; }
   form label {
     font-size: 0.9375rem;
     line-height: 1.6em; }
-  form input[type="text"] {
+  form input[type="text"], form input[type="email"] {
     border-radius: 2px;
-    padding: 10px 16px; }
+    padding: 10px 16px;
+    color: #022F40; }
+  form input[type="text"]::placeholder, form input[type="email"]::placeholder {
+    color: #022F40;
+    opacity: 1; }
   form button[type="submit"] {
     margin-left: auto;
     margin-right: auto;
@@ -266,28 +271,30 @@ form {
         margin: 42px auto 52px;
         display: block; } }
 
-.about {
+.features {
   padding-top: 113px;
-  padding-bottom: 50px; }
-  .about .item {
+  padding-bottom: 50px;
+  background-color: #FAFAFA; }
+  .features .item {
     padding-top: 25px;
     padding-bottom: 25px; }
     @media (min-width: 768px) {
-      .about .item {
+      .features .item {
         padding: 90px 40px 43px; } }
-  .about .cloud img {
+  .features .cloud img {
     margin-top: 13px;
     margin-bottom: 28px; }
-  .about .cells img {
+  .features .cells img {
     margin-top: 13px;
     margin-bottom: 25px; }
-  .about .tv img {
+  .features .tv img {
     margin-top: 0px;
     margin-bottom: 20px; }
   @media (min-width: 768px) {
-    .about {
+    .features {
       padding-top: 50px;
-      padding-bottom: 50px; } }
+      padding-bottom: 50px;
+      background-color: #FFFFFF; } }
 
 .signup {
   position: relative;

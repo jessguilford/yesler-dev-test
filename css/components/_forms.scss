@@ -1,5 +1,6 @@
 form {
   padding: 48px 0;
+  font-family: $open-sans;
 
   .form-group {
     text-align: left;
@@ -10,9 +11,15 @@ form {
     line-height: em-calc(24,15);
   }
 
-  input[type="text"] {
+  input[type="text"], input[type="email"] {
     border-radius: 2px;
     padding: 10px 16px;
+    color: $navy;
+  }
+
+  input[type="text"]::placeholder, input[type="email"]::placeholder {
+    color: $navy;
+    opacity: 1;
   }
 
   button[type="submit"] {
