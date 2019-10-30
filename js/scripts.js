@@ -33,7 +33,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 600, 'easeOutSine');
+    }, 1000, 'easeOutSine');
 });
 
 // Get position of the bottom of the hero
@@ -43,7 +43,7 @@ var heroBottom = heroPos + $('#hero').height();
 $(window).scroll(function() {
   // When the user has scrolled fully past the hero, show the slidedown banner
   if ( $(this).scrollTop() > heroBottom ) {
-    $('.slidedown').slideDown(200);
+    $('.slidedown').slideDown(300);
   } else {
     $('.slidedown').slideUp();
   }

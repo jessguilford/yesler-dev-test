@@ -293,8 +293,7 @@ form {
   @media (min-width: 768px) {
     .features {
       padding-top: 50px;
-      padding-bottom: 50px;
-      background-color: #FFFFFF; } }
+      padding-bottom: 50px; } }
 
 .signup {
   position: relative;
