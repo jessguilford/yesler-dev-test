@@ -91,7 +91,9 @@ p {
   text-transform: uppercase;
   border-radius: 2px;
   border: 2px solid #FF6542;
-  background-color: #FF6542; }
+  background-color: #FF6542;
+  text-align: center;
+  color: #FFFFFF; }
   .button-primary:hover {
     text-decoration: none;
     color: inherit; }
@@ -102,10 +104,12 @@ p {
       margin-bottom: 1.3333333333em; } }
   .button-primary:hover {
     border: 2px solid #FF7E61;
-    background-color: #FF7E61; }
+    background-color: #FF7E61;
+    color: #FFFFFF; }
   .button-primary:focus {
     background-color: #FF5A36;
-    border: 2px solid #FF5A36; }
+    border: 2px solid #FF5A36;
+    color: #FFFFFF; }
 
 .button-secondary {
   color: #FFFFFF;
@@ -168,13 +172,49 @@ form {
   background-color: rgba(0, 0, 0, 0.4);
   left: 0;
   right: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 2; }
   .nav .brand-logo {
     width: 123px;
     padding-top: 10px;
     padding-bottom: 10px; }
+
+.slidedown {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(129, 129, 129, 0.5);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(129, 129, 129, 0.5);
+  box-shadow: 0px 2px 2px 0px rgba(129, 129, 129, 0.5); }
+  .slidedown p {
+    margin-right: 35px;
+    margin-left: 35px; }
+  @media (max-width: 767px) {
+    .slidedown .company-logo {
+      padding-right: 0;
+      max-width: 100%; }
+      .slidedown .company-logo .brand-logo {
+        padding-left: 5px; } }
+  @media (max-width: 767px) {
+    .slidedown .cta {
+      padding-left: 0; } }
+  .slidedown .button-primary {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 14px; }
+    @media (min-width: 768px) {
+      .slidedown .button-primary {
+        min-width: 180px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 19px; } }
 
 .hero {
   min-height: 537px;

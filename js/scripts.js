@@ -5,3 +5,16 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
+
+// Get position of the bottom of the hero
+var heroPos = $('#hero').offset().top;
+var heroBottom = heroPos + $('#hero').height();
+
+$(window).scroll(function() {
+  // When the user has scrolled fully past the hero, show the slidedown banner
+  if ( $(this).scrollTop() > heroBottom ) {
+    $('.slidedown').slideDown(200);
+  } else {
+    $('.slidedown').slideUp();
+  }
+});

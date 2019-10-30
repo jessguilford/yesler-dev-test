@@ -20,7 +20,7 @@
   background-color: rgba(0,0,0,0.4);
   left: 0;
   right: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 2;
 
@@ -28,6 +28,57 @@
     width: 123px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+// Slidedown banner
+.slidedown {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(129,129,129,0.5);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(129,129,129,0.5);
+  box-shadow: 0px 2px 2px 0px rgba(129,129,129,0.5);
+
+  p {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+  .company-logo {
+    @include xs {
+      padding-right: 0;
+      max-width: 100%;
+
+      .brand-logo {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .cta {
+    @include xs {
+      padding-left: 0;
+    }
+  }
+
+  .button-primary {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 14px;
+
+    @include sm {
+      min-width: 180px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      padding: 19px;
+    }
   }
 }
 
